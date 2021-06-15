@@ -29,6 +29,7 @@ import ForgotPassword from "../components/forget-password/password/Password"
 import StudentForm from "../components/students/students"
 import StudentForm2 from "../components/students/Student"
 import Teacherform from "../components/teacher/teacher"
+import Institutes from "../components/institute/institute"
 
 
 
@@ -64,7 +65,8 @@ export default function Routing() {
           <Route exact path="/student-form" component={StudentForm}/>
           <Route exact path="/student-form12" component={StudentForm2}/>
           <Route exact path="/teacher-form" component={Teacherform}/>
-          
+          <Route exact path="/institute-form" component={Institutes}/>
+
         </Switch>
       </div>
     

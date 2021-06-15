@@ -33,7 +33,7 @@ const Signup =(props)=> {
     }
     else if (value == 'Institutes') {
       console.log(value);
-      window.location.href = "/instituteSignup";
+      window.location.href = "/institute-form";
     }
   }
 
