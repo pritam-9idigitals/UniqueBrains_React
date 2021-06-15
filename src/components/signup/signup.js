@@ -1,4 +1,6 @@
 import React,{useState} from "react";
+import { useHistory } from "react-router-dom";
+
 import {
   Button,
   TextField,
@@ -11,8 +13,30 @@ import {
 } from "@material-ui/core";
 
 const Signup =(props)=> {
+    let history = useHistory();
 
   const [value,setValue] = useState("Teacher")
+
+  const Teacher =() => {
+      history.push('/teacher-form')
+
+  }
+  const Student =() => {
+    history.push('/student-form12')
+
+}
+const Employee =() => {
+    history.push('/signupemployee')
+
+}
+const Employer =() => {
+    history.push('/signupemployer')
+
+}
+const Institute =() => {
+    history.push('/institute-form')
+
+}
     
   function handlePrint() {
     if (value == 'Teacher') {
@@ -59,7 +83,7 @@ const Signup =(props)=> {
                                     <img className="img-fluid " src="https://media.istockphoto.com/photos/teacher-with-document-picture-id905256730" alt="tutor" />
                                 </div>
                                 <div className="card-footer">
-                                    <button className="btn btn-primary">Teacher</button>
+                                    <button className="btn btn-primary" onClick={Teacher}>Teacher</button>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +93,7 @@ const Signup =(props)=> {
                                     <img className="img-fluid" src="https://media.istockphoto.com/photos/cute-smiling-little-african-american-schoolgirl-with-books-on-yellow-picture-id1202500140" alt="tutor" />
                                 </div>
                                 <div className="card-footer">
-                                    <button className="btn btn-primary">Student</button>
+                                    <button className="btn btn-primary" onClick={Student}>Student</button>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +105,7 @@ const Signup =(props)=> {
                                     <img className="img-fluid" src="https://cdn.pixabay.com/photo/2015/08/11/23/13/employees-885338_960_720.jpg" alt="a girl" />
                                 </div>
                                 <div className="card-footer">
-                                    <button className="btn btn-primary">Employee</button>
+                                    <button className="btn btn-primary" onClick={Employee}>Employee</button>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +115,7 @@ const Signup =(props)=> {
                                     <img className="img-fluid" src="https://media.istockphoto.com/photos/business-people-working-together-at-coffee-shop-picture-id876388422" alt="post your job" />
                                 </div>
                                 <div className="card-footer">
-                                    <button className="btn btn-primary">Employer</button>
+                                    <button className="btn btn-primary" onClick={Employer}>Employer</button>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +128,7 @@ const Signup =(props)=> {
                                     <img className="img-fluid" src="https://cdn.pixabay.com/photo/2014/05/02/23/52/castle-336498_960_720.jpg" alt="Looking for teaching" />
                                 </div>
                                 <div className="card-footer text-center">
-                                    <button className="btn btn-primary">Institute</button>
+                                    <button className="btn btn-primary" onClick={Institute}>Institute</button>
                                 </div>
                             </div>
                         </div>
