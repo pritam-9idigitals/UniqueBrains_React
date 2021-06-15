@@ -33,7 +33,7 @@ const Signup =(props)=> {
     }
     else if (value == 'Institutes') {
       console.log(value);
-      window.location.href = "/institute-form";
+      window.location.href = "/instituteSignup";
     }
   }
 
@@ -44,50 +44,77 @@ const Signup =(props)=> {
 
     return (
       <div className="container">
-        <img src="./login.jpg" alt="User signup" class="pagebannerleft" width="100%" height="380" />
-        <div className="clearfix"></div>
-        <div className="row">
-
-          <div class="container d-flex justify-content-center mt-5">
-
-            <div class="card">
-
-              <div className="d-flex justify-content-center pt-5"><i className="fa fa-arrows-alt icon1"></i>
-                <i className="fa fa-laptop icon2"></i></div>
-
-              <span className="text-center dwntxt">
-                India’s largest online platform with a network of most trusted local Tutors, students, Parents, Freelancers across India.
-                Post and connect with the users in your locality.
-              </span>
-
-
-              <div className="chooseregistration">
-
-                <h6 className="text-center font-weight-bold pt-4 error">Choose your registration type</h6>
-
-                <div className="d-flex justify-content-center margin customrole">
-
-                  <div className="clearfix"></div>
-                  <select onChange={handleChange} style={{fontSize:'16px'}} className="btn btn-primary">
-                    <option value="Teacher">Teacher</option>
-                    <option value="Students">Students/Parents</option>
-                    <option value="Employer">Employer</option>
-                    <option value="Employee">Employee</option>
-                    <option value="Institutes">Institutes</option>
-                  </select>
+         <div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div className="modal-dialog" role="document">
+            <div className="modal-content">
+                <div className="modal-header">
+                    <h2 id="exampleModalLabel">What are you looking for?</h2>
                 </div>
-                <div className="d-flex custodrbutton">
-                  <button className="btn btn-success " style={{fontSize:'16px'}} onClick={handlePrint}>Continue to signup</button>
+                <div className="modal-body">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="card">
+                                <div className="card-body p-0 ">
+                                    <img className="img-fluid " src="https://media.istockphoto.com/photos/teacher-with-document-picture-id905256730" alt="tutor" />
+                                </div>
+                                <div className="card-footer">
+                                    <button className="btn btn-primary">Teacher</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="card">
+                                <div className="card-body p-0">
+                                    <img className="img-fluid" src="https://media.istockphoto.com/photos/cute-smiling-little-african-american-schoolgirl-with-books-on-yellow-picture-id1202500140" alt="tutor" />
+                                </div>
+                                <div className="card-footer">
+                                    <button className="btn btn-primary">Student</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-3">
+                        <div className="col-md-6">
+                            <div className="card">
+                                <div className="card-body p-0">
+                                    <img className="img-fluid" src="https://cdn.pixabay.com/photo/2015/08/11/23/13/employees-885338_960_720.jpg" alt="a girl" />
+                                </div>
+                                <div className="card-footer">
+                                    <button className="btn btn-primary">Employee</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="card">
+                                <div className="card-body p-0">
+                                    <img className="img-fluid" src="https://media.istockphoto.com/photos/business-people-working-together-at-coffee-shop-picture-id876388422" alt="post your job" />
+                                </div>
+                                <div className="card-footer">
+                                    <button className="btn btn-primary">Employer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-3">
+                        <div className="col-md-3"></div>
+                        <div className="col-md-7">
+                            <div className="card">
+                                <div className="card-body p-0">
+                                    <img className="img-fluid" src="https://cdn.pixabay.com/photo/2014/05/02/23/52/castle-336498_960_720.jpg" alt="Looking for teaching" />
+                                </div>
+                                <div className="card-footer text-center">
+                                    <button className="btn btn-primary">Institute</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-2"></div>
+                    </div>
+                    
                 </div>
-
-
-                <span className="vrydown"> Contact Us . Home</span>
-
-              </div>
             </div>
-          </div>
-
-        </div >
+        </div>
+    </div>
       </div >
     );
   

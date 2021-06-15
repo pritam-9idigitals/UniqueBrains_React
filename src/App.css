@@ -2931,3 +2931,15 @@ border-bottom: 1px solid ;
   
   visibility: visible !important;
 }
+
+.modal-header{
+  background: #ff8a00;
+  text-align: center;
+}
+.modal-body{
+  text-align: center;
+}
+.card{
+  border: solid;
+  margin: 3%;
+}
