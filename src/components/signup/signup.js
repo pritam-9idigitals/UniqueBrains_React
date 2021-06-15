@@ -17,11 +17,11 @@ const Signup =(props)=> {
   function handlePrint() {
     if (value == 'Teacher') {
       console.log(value);
-      window.location.href = "/signupTutors";
+      window.location.href = "/teacher-form";
     }
     else if (value == 'Students') {
       console.log(value);
-      window.location.href = "/studentSignup";
+      window.location.href = "/student-form12";
     }
     else if (value == 'Employer') {
       console.log(value);

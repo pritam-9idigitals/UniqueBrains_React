@@ -64,6 +64,7 @@ export default function Routing() {
           <Route exact path="/student-form" component={StudentForm}/>
           <Route exact path="/student-form12" component={StudentForm2}/>
           <Route exact path="/teacher-form" component={Teacherform}/>
+          
         </Switch>
       </div>
     
