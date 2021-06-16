@@ -30,6 +30,8 @@ import StudentForm from "../components/students/students"
 import StudentForm2 from "../components/students/Student"
 import Teacherform from "../components/teacher/teacher"
 import Institutes from "../components/institute/institute"
+import Employer from "../components/dashboard/Employer"
+import Teacher from "../components/dashboard/Teacher"
 import ProfilEmployee from "../components/profileDetails/ProfileEmployee"
 import ProfilStudent from "../components/profileDetails/profileStudent"
 
@@ -68,6 +70,8 @@ export default function Routing() {
           <Route exact path="/student-form12" component={StudentForm2}/>
           <Route exact path="/teacher-form" component={Teacherform}/>
           <Route exact path="/institute-form" component={Institutes}/>
+          <Route exact path="/employer" component={Employer}/>
+          <Route exact path="/teacher" component={Teacher}/>
           <Route exact path="/profilEmployee" component={ProfilEmployee}/>
           <Route exact path="/profilStudent" component={ProfilStudent}/>
 
