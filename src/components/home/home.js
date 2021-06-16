@@ -1,8 +1,21 @@
-import React from "react";
+import React from "react"
+import { useHistory,Link } from "react-router-dom"
 
 
 
 export default function Home() {
+   let history = useHistory();
+ const  tution = () => {
+      history.push("/teacher-form");
+
+   }
+  const Courses = () => {
+   history.push("/courses");
+  } 
+
+  const Job = () => {
+   history.push("/jobs");
+  }
    return (
       <div class="container">
          <div className="row">
@@ -14,7 +27,8 @@ export default function Home() {
                <p class="hwDesc">
                   Live in a small town with very few good tutors? No problem, the best tutors from Mumbai, Delhi and Bangalore will be at your service through our world-class online video tutoring
     system!</p>
-               <button type="button" class="btn btn-primary  margin-top-10" style={{fontSize:'18px'}}>Signup as a Tutor</button>
+               <button type="button" class="btn btn-primary  margin-top-10" style={{fontSize:'18px'}}
+                onClick ={tution}>Signup as a Tutor</button>
             </div>
          </div>
 
@@ -64,7 +78,7 @@ export default function Home() {
 
 
                <div class="postLinkBlck">
-                  <a href="#" class="primaryButton postReqHwWrk">Post your learning requirement</a>
+                  <Link to='/student-form12' class="primaryButton postReqHwWrk">Post your learning requirement</Link>
                </div>
 
             </div>
@@ -160,7 +174,7 @@ export default function Home() {
                </li>
             </ul>
             <div class="container text-center">
-               <button type="button" class="btn btn-primary margin-top-bottom" style={{fontSize:'18px'}}>Browse all the courses</button>
+               <button type="button" onClick={Courses} class="btn btn-primary margin-top-bottom" style={{fontSize:'18px'}}>Browse all the courses</button>
             </div>
 
          </div>
@@ -231,7 +245,7 @@ export default function Home() {
                </div>
 
                <div class=" text-center ">
-                  <button type="button" class="btn btn-primary margin-top-bottom" style={{fontSize:'18px'}}>Browse All Categories</button>
+                  <button type="button" onClick={Job} class="btn btn-primary margin-top-bottom" style={{fontSize:'18px'}}>Browse All Categories</button>
                </div>
                <div class="margin-bottom-55"></div>
             </div>
