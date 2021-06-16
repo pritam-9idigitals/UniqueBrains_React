@@ -30,8 +30,8 @@ import StudentForm from "../components/students/students"
 import StudentForm2 from "../components/students/Student"
 import Teacherform from "../components/teacher/teacher"
 import Institutes from "../components/institute/institute"
-
-
+import Employer from "../components/dashboard/Employer"
+import Teacher from "../components/dashboard/Teacher"
 
 export default function Routing() {
   return (
@@ -66,7 +66,8 @@ export default function Routing() {
           <Route exact path="/student-form12" component={StudentForm2}/>
           <Route exact path="/teacher-form" component={Teacherform}/>
           <Route exact path="/institute-form" component={Institutes}/>
-
+          <Route exact path="/employer" component={Employer}/>
+          <Route exact path="/teacher" component={Teacher}/>
         </Switch>
       </div>
     
