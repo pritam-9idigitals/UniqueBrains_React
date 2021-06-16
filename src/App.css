@@ -2950,3 +2950,12 @@ p .proLogin {
 span .closeicon {
   padding: 0px 5px 0px 5px;
 }
+
+
+.modal-header{
+  background-color: rgb(247, 183, 86);
+}
+.modal-content
+{
+  text-align: center;
+}
