@@ -167,7 +167,7 @@ const SigninOtp = () => {
                                           login();
                                        }}>
                                        VERIFY
-                                        </Button></center>
+                                    </Button></center>
                                  </Grid>
                               </Grid>
                            </form>
