@@ -1,27 +1,36 @@
-import React from 'react'
+import React from "react";
 
 function Teacher() {
-    return (
-        <div className="container">
-        <div className="row">
-          <div className="col-md-3">
-            <div>
-            <img className="img-fluid" style={{borderRadius:"50%",height:"100px",textAlign:"center"}} src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553__340.png"/>
-              <h6>Employer</h6>
-              <h6>Pravin_2021</h6>
-            </div>
-            <div>
-              <p>Pravin Kumar</p>
-              <p>+91 7876556789</p>
-              <p>pravinkumar@gmail.com</p>
-              <button className="btn btn-primary">
-                Edit Your Profile <i className="fa fa-pen"></i>
-              </button>
-            </div>
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-3 mt-5" style={{ backgroundColor: "#efefef" }}>
+          <div>
+            <img
+              className="img-fluid"
+              style={{
+                borderRadius: "50%",
+                height: "100px",
+                textAlign: "center",
+              }}
+              src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553__340.png"
+            />
+            <h6>Teacher</h6>
+            <h6>Yash_2021</h6>
           </div>
-          <div className="col-md-9">
-            <div className="mt-2">
-              <h4>Personal Details</h4>
+          <div>
+            <p>Yash Pandya</p>
+            <p>+91 9876556789</p>
+            <p>yeshpanday@gmail.com</p>
+            <button className="btn btn-primary">
+              Edit Your Profile <i className="fa fa-pen"></i>
+            </button>
+          </div>
+        </div>
+        <div className="col-md-9">
+          <div style={{ backgroundColor: "#efefef" }}>
+            <div className="m-5">
+              <h4 >Personal Details</h4>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
                   <label for="validationDefault01">Full Name</label>
@@ -29,7 +38,7 @@ function Teacher() {
                     type="text"
                     className="form-control"
                     id="validationDefault01"
-                    placeholder="Pravin Kumar"
+                    placeholder="Yash Gupta"
                     required
                   />
                 </div>
@@ -55,7 +64,7 @@ function Teacher() {
                     type="text"
                     className="form-control"
                     id="validationDefault04"
-                    placeholder="+91 7876556789"
+                    placeholder="+91 9876556789"
                     required
                   />
                 </div>
@@ -77,7 +86,7 @@ function Teacher() {
                     type="text"
                     className="form-control"
                     id="validationDefault04"
-                    placeholder="+91 7876556789"
+                    placeholder="+91 9876556789"
                     required
                   />
                 </div>
@@ -116,7 +125,9 @@ function Teacher() {
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">Enter your full address</label>
+                  <label for="validationDefault04">
+                    Enter your full address
+                  </label>
                   <input
                     type="text"
                     className="form-control"
@@ -126,46 +137,62 @@ function Teacher() {
                   />
                 </div>
               </div>
-              <div className="bg">
+            </div>
+          </div>
+         
+          <div style={{ backgroundColor: "#efefef" }}>
+            <div className=" m-5">
+            <h4>
+            Class Type <i className="fa fa-pen"></i>
+          </h4>
+          <div className="form-row">
+          <div className="col-md-12 mb-3">
+            <input type="radio" name="gender" value="male" /> Face to face
+            tutoring
+            <input type="radio" name="gender" value="female" /> Online
+            tutoring
+            <input type="radio" name="gender" value="female" /> Both Face
+            to face tutoring & Online tutoring
+          </div>
+          </div>
+            </div>
+          </div>
+          
+          <div style={{ backgroundColor: "#efefef" }}>
+            <div className="form-row m-5">
+              <div className="col-md-6 mb-3 mt-5">
                 <h4>
-                  Class Type <i className="fa fa-pen"></i>
+                  Segment <i className="fa fa-pen"></i>
                 </h4>
-                <div className="form-row">
-                <input type="radio" name="gender" value="male" /> Face to face tutoring
-                <input type="radio" name="gender" value="female" /> Online tutoring
-                <input type="radio" name="gender" value="female" /> Both Face to face tutoring & Online tutoring
+                <div className="form-check">
+                  <input type="checkbox" value="" id="flexCheckDefault" />
+                  <label className="form-check-label" for="flexCheckDefault">
+                    Class 1-5
+                  </label>
+                </div>
+                <div className="form-check">
+                  <input type="checkbox" value="" id="flexCheckChecked" />
+                  <label className="form-check-label" for="flexCheckChecked">
+                    Class 6-8
+                  </label>
+                </div>
+                <div className="form-check">
+                  <input type="checkbox" value="" id="flexCheckDefault" />
+                  <label className="form-check-label" for="flexCheckDefault">
+                    Class 1-10
+                  </label>
+                </div>
+                <div className="form-check">
+                  <input type="checkbox" value="" id="flexCheckChecked" />
+                  <label className="form-check-label" for="flexCheckChecked">
+                    Class 11-12
+                  </label>
                 </div>
               </div>
-              <div className="form-row">
-                <div className="col-md-6 mb-3">
-                <h4>Segment <i className="fa fa-pen"></i></h4>
-                <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-  <label class="form-check-label" for="flexCheckDefault">
-    Class 1-5
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-  <label class="form-check-label" for="flexCheckChecked">
-    Class 6-8
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-  <label class="form-check-label" for="flexCheckDefault">
-    Class 1-10
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"/>
-  <label class="form-check-label" for="flexCheckChecked">
-    Class 11-12
-  </label>
-</div>
-                </div>
-                <div className="col-md-6 mb-3">
-                <h4>Fees <i className="fa fa-pen"></i></h4>
+              <div className="col-md-6 mb-3 mt-5">
+                <h4>
+                  Fees <i className="fa fa-pen"></i>
+                </h4>
                 <label for="validationDefault04">Rate/Hour</label>
                 <input
                   type="text"
@@ -174,13 +201,13 @@ function Teacher() {
                   placeholder="INR 800"
                   required
                 />
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    )
+    </div>
+  );
 }
 
-export default Teacher
+export default Teacher;
