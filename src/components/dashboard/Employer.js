@@ -3,9 +3,9 @@ import React from "react";
 function Employer() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-md-3 mt-5" style={{ backgroundColor: "#efefef" }}>
-          <div>
+      <div className="row shadow rounded">
+        <div className="col-md-3 mt-5" style={{ backgroundColor: "#efefef",textAlign:"center", height:"400px"}}>
+          <div className="mt-5">
             <img
               className="img-fluid"
               style={{
@@ -33,11 +33,11 @@ function Employer() {
               <h4>Personal Details</h4>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault01">Full Name</label>
+                  <label >Full Name</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault01"
+                   
                     placeholder="Pravin Kumar"
                     required
                   />
@@ -49,21 +49,21 @@ function Employer() {
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">Date of Birth</label>
+                  <label >Date of Birth</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                  
                     placeholder="DD/MM/YY"
                     required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">Phone Number</label>
+                  <label>Phone Number</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault04"
+                   
                     placeholder="+91 7876556789"
                     required
                   />
@@ -71,117 +71,112 @@ function Employer() {
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">Email Id</label>
+                  <label >Email Id</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                   
                     placeholder="kajalmisra@gmail.com"
                     required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">Whatsapp Number</label>
+                  <label>Whatsapp Number</label>
                   <input
                     type="text"
-                    className="form-control"
-                    id="validationDefault04"
-                    placeholder="+91 7876556789"
+                    className="form-control"placeholder="+91 7876556789"
                     required
                   />
                 </div>
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">City</label>
+                  <label >City</label>
                   <input
                     type="text"
-                    className="form-control"
-                    id="validationDefault03"
-                    placeholder="Mumbai"
+                    className="form-control" placeholder="Mumbai"
                     required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">Area</label>
+                  <label>Area</label>
                   <input
                     type="text"
-                    className="form-control"
-                    id="validationDefault04"
-                    placeholder="Mumbai"
+                    className="form-control"placeholder="Mumbai"
                     required
                   />
                 </div>
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">Pin Code</label>
+                  <label>Pin Code</label>
                   <input
                     type="text"
-                    className="form-control"
-                    id="validationDefault03"
-                    placeholder="756421"
+                    className="form-control" placeholder="756421"
                     required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">
+                  <label>
                     Enter your full address
                   </label>
                   <input
                     type="text"
-                    className="form-control"
-                    id="validationDefault04"
-                    placeholder="Mumbai"
+                    className="form-control" placeholder="Mumbai"
                     required
                   />
                 </div>
               </div>
             </div>
-            <div className="m-5">
-              <h4>
-                Project Information <i className="fa fa-pen"></i>
-              </h4>
-              <div className="form-row">
-                <textarea className="form-control" />
-              </div>
             </div>
-            <div className="form-row m-5">
-              <div className="col-md-6 mb-3">
-                <h4>
-                  Select Skills <i className="fa fa-pen"></i>
-                </h4>
-                <select
-                  class="form-select"
-                  size="5"
-                  aria-label="size 6 select example"
-                >
-                  <option selected>HTML</option>
-                  <option value="1">CSS</option>
-                  <option value="2">JavaScript</option>
-                  <option value="3">Python</option>
-                  <option value="3">React</option>
-                  <option value="3">Angular</option>
-                </select>
-              </div>
-              <div className="col-md-6 mb-3">
-                <h4>
-                  Select Employment <i className="fa fa-pen"></i>
-                </h4>
-                <select
-                  class="form-select"
-                  size="4"
-                  aria-label="size 6 select example"
-                >
-                  <option selected>Full time</option>
-                  <option value="1">Part time</option>
-                  <option value="2">Freelance</option>
-                  <option value="3">Contract based</option>
-                </select>
-              </div>
+            <div style={{ backgroundColor: "#efefef",height:"80px" }}>
+            <div className="m-5">
+            <h4>
+              Project Information <i className="fa fa-pen"></i>
+            </h4>
+            <div className="form-row">
+              <textarea className="form-control fw-bold" placeholder="Tell us more about the project" required/>
             </div>
           </div>
-        </div>
+            </div>
+ <div style={{ backgroundColor: "#efefef" }}>
+            <div className="form-row m-5" >
+            <div className="col-md-6 mb-3">
+              <h4>
+                Select Skills <i className="fa fa-pen"></i>
+              </h4>
+              <select
+                class="form-select"
+                size="5"
+                aria-label="size 6 select example"
+                style={{width:"100%"}}
+              >
+                <option selected style={{fontSize:"16px"}}>HTML</option>
+                <option value="1" style={{fontSize:"16px"}}>CSS</option>
+                <option value="2" style={{fontSize:"16px"}}>JavaScript</option>
+                <option value="3" style={{fontSize:"16px"}}>Python</option>
+                <option value="4" style={{fontSize:"16px"}}>React</option>
+                <option value="5" style={{fontSize:"16px"}}>Angular</option>
+              </select>
+            </div>
+            <div className="col-md-6 mb-3">
+              <h4>
+                Select Employment <i className="fa fa-pen"></i>
+              </h4>
+              <select
+                class="form-select"
+                size="4"
+                aria-label="size 6 select example"
+                style={{width:"100%"}}
+              >
+                <option selected style={{fontSize:"16px"}}>Full time</option>
+                <option value="1" style={{fontSize:"16px"}}>Part time</option>
+                <option value="2" style={{fontSize:"16px"}}>Freelance</option>
+                <option value="3" style={{fontSize:"16px"}}>Contract based</option>
+              </select>
+            </div>
+          </div>
+            </div> </div>
       </div>
     </div>
   );

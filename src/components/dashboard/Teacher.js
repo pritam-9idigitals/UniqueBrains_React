@@ -3,9 +3,9 @@ import React from "react";
 function Teacher() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-md-3 mt-5" style={{ backgroundColor: "#efefef" }}>
-          <div>
+      <div className="row shadow rounded">
+        <div className="col-md-3 mt-5" style={{ backgroundColor: "#efefef",textAlign:"center", height:"400px"}}>
+          <div className="mt-5">
             <img
               className="img-fluid"
               style={{
@@ -33,37 +33,38 @@ function Teacher() {
               <h4 >Personal Details</h4>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault01">Full Name</label>
+                  <label>Full Name</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault01"
+                   
                     placeholder="Yash Gupta"
                     required
                   />
                 </div>
-                <div className="col-md-6 mb-3 mt-3">
-                  <input type="radio" name="gender" value="male" /> Male
-                  <input type="radio" name="gender" value="female" /> Female
+                <div className="col-md-6 mb-3">
+                  <input  type="radio" name="gender" value="male" />Male
+                  <input type="radio" name="gender" value="female" />Female
+                 
                 </div>
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">Date of Birth</label>
+                  <label >Date of Birth</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                  
                     placeholder="DD/MM/YY"
                     required
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault04">Phone Number</label>
+                  <label>Phone Number</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault04"
+                   
                     placeholder="+91 9876556789"
                     required
                   />
@@ -71,11 +72,11 @@ function Teacher() {
               </div>
               <div className="form-row">
                 <div className="col-md-6 mb-3">
-                  <label for="validationDefault03">Email Id</label>
+                  <label >Email Id</label>
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                    
                     placeholder="kajalmisra@gmail.com"
                     required
                   />
@@ -85,7 +86,7 @@ function Teacher() {
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault04"
+                   
                     placeholder="+91 9876556789"
                     required
                   />
@@ -97,7 +98,7 @@ function Teacher() {
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                   
                     placeholder="Mumbai"
                     required
                   />
@@ -107,7 +108,7 @@ function Teacher() {
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault04"
+                    
                     placeholder="Mumbai"
                     required
                   />
@@ -119,7 +120,7 @@ function Teacher() {
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault03"
+                   
                     placeholder="756421"
                     required
                   />
@@ -131,7 +132,7 @@ function Teacher() {
                   <input
                     type="text"
                     className="form-control"
-                    id="validationDefault04"
+                   
                     placeholder="Mumbai"
                     required
                   />
@@ -141,18 +142,18 @@ function Teacher() {
           </div>
          
           <div style={{ backgroundColor: "#efefef" }}>
-            <div className=" m-5">
+            <div className="m-5">
             <h4>
             Class Type <i className="fa fa-pen"></i>
           </h4>
           <div className="form-row">
           <div className="col-md-12 mb-3">
-            <input type="radio" name="gender" value="male" /> Face to face
-            tutoring
-            <input type="radio" name="gender" value="female" /> Online
-            tutoring
-            <input type="radio" name="gender" value="female" /> Both Face
-            to face tutoring & Online tutoring
+            <input type="radio" name="f-2-f" value="f-2-f"/><h4>Face to face
+            tutoring</h4>
+            <input type="radio" name="online" value="online"/><h4>Online
+            tutoring</h4>
+            <input type="radio" name="both" value="both"/><h4>Both Face
+            to face tutoring & Online tutoring</h4>
           </div>
           </div>
             </div>
@@ -165,26 +166,26 @@ function Teacher() {
                   Segment <i className="fa fa-pen"></i>
                 </h4>
                 <div className="form-check">
-                  <input type="checkbox" value="" id="flexCheckDefault" />
-                  <label className="form-check-label" for="flexCheckDefault">
+                  <input type="checkbox" value=""  />
+                  <label className="ml-3 form-check-label" for="" style={{fontSize:"16px"}}>
                     Class 1-5
                   </label>
                 </div>
                 <div className="form-check">
-                  <input type="checkbox" value="" id="flexCheckChecked" />
-                  <label className="form-check-label" for="flexCheckChecked">
+                  <input type="checkbox" value=""  />
+                  <label className="ml-3 form-check-label" for=""  style={{fontSize:"16px"}}>
                     Class 6-8
                   </label>
                 </div>
                 <div className="form-check">
-                  <input type="checkbox" value="" id="flexCheckDefault" />
-                  <label className="form-check-label" for="flexCheckDefault">
+                  <input type="checkbox" value=""  />
+                  <label className="ml-3 form-check-label" for=""  style={{fontSize:"16px"}}>
                     Class 1-10
                   </label>
                 </div>
                 <div className="form-check">
-                  <input type="checkbox" value="" id="flexCheckChecked" />
-                  <label className="form-check-label" for="flexCheckChecked">
+                  <input type="checkbox" value=""  />
+                  <label className="ml-3 form-check-label" for=""  style={{fontSize:"16px"}}>
                     Class 11-12
                   </label>
                 </div>
@@ -197,7 +198,7 @@ function Teacher() {
                 <input
                   type="text"
                   className="form-control"
-                  id="validationDefault04"
+                 
                   placeholder="INR 800"
                   required
                 />
